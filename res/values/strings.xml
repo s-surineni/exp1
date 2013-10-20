@@ -4,5 +4,10 @@
     <string name="app_name">exp1</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="flames">Flames</string>
+    <string name="name1">Enter 1st name</string>
+    <string name="name2">Enter 2nd name</string>
+    <string name="flameon">Flame On</string>
+    <string name="reln">Relation</string>
 
 </resources>
