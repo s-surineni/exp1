@@ -2,6 +2,10 @@ package com.example.exp1;
 
 
 
+import java.io.IOException;
+
+
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
@@ -29,16 +33,25 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				getTheIn();
+				try {
+					getTheIn();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 			}
 		});
     }
     
-    void getTheIn(){
+    void getTheIn() throws IOException{
     	EditText nm1=(EditText)findViewById(R.id.name1);
     	EditText nm2=(EditText)findViewById(R.id.name2);
     	String nam1=nm1.getText().toString();
     	String nam2=nm2.getText().toString();
+    	findOut fio=new findOut(nam1,nam2);
+    	String reln=fio.findingOut();
+    	TextView dR=(TextView)findViewById(R.id.reln);
+    	dR.setText(reln);
     	
     }
 

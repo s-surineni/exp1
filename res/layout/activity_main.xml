@@ -29,11 +29,15 @@
         android:id="@+id/click"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:text="@string/flameon"/>
     <TextView 
         android:id="@+id/reln"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="15sp"
+        
         android:text="@string/reln" />
     
 
